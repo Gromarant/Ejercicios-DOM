@@ -54,6 +54,12 @@ const button = document.querySelector('button');
 createItem('main', body, mainClassName);
 createItem('section', document.querySelector('.container'), sectionsClassName);
 
+//1.Bis ---> fourth assignment: add elements of an array into a list element
+let Items = ['Ejercicio 1:', 'Hacer un ul', 'Agregar 2 li al ul', 'Ejercicio 1 bis:', 'Iterar sobre los elementos de un array', 'Agregar los elementos a la lista (ul)', 'Ejercicio 2:', 'Crear un botón y un párrafo', 'Agregar un evento click en el botón para esconder o mostrar el texto', 'Ejercicio 3:', 'Añadir una imagen y su descripción', 'agregar los eventos mouseover y mouseout sobre la imagen para esconder o mostrar su descripción'];
+
+const addMoreItems = (listItems, newItems) => newItems.forEach(item => listItems.push(item));
+addMoreItems(twoItems, Items);
+
 //1. ---> First assignment: 1 <ul></ul> with 2 <li></li>
 createItem('h1', document.querySelector('.list'), [], [], '', 'Lista de tareas: ');
 createItem('ul', document.querySelector('.list'), [], twoItems);
