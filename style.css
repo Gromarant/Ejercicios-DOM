@@ -1,3 +1,25 @@
 .hidden {
   visibility: hidden;
 }
+
+h1 {
+  color: rgb(77, 90, 106);
+}
+
+.list, .toggleText, .imageEfect {
+  margin: 3rem;
+}
+button {
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: rgb(66, 192, 64);
+}
+
+.imageEfect > figure > img {
+  justify-self: center;
+  max-width: 40rem;
+}
+.imageEfect > figure > figcaption {
+  font-size: 2rem;
+}
